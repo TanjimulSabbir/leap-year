@@ -5,21 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Leap Year</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="full-display">
-        <div class="divInput">
-            <input type="text" class="inputText" id="inputText">
-        </div>
-        <div id="display">
 
+    <div class="bg-[#112240] min-h-screen flex justify-center items-center">
+        <div class="leap-Year card w-96 bg-base-100 shadow-xl p-10">
+            <div id="display" class="mb-4 px-2 text-green-600 " style="font-family: 'PT Sans', sans-serif">
+            </div>
+            <div class="divInput">
+                <input type="text" id="inputText" class="inputText input input-bordered w-full max-w-xs"
+                    placeholder="Enter Year" />
+            </div>
+
+            <div class="mt-6">
+                <button
+                    class="btn w-full max-w-xs text-[#006838] rounded-3xl px-8 border-2 border-[#006838] hover:border-[#006838] transition duration-500 hover:bg-transparent hover:text-white cursor-pointer"
+                    onclick="leapYearBtn()">Submit</button>
+            </div>
         </div>
-        <button onclick="leapYearBtn()">Leap Year</button>
     </div>
-    <p class="powered">Powerd by Tanjimul Islam Sabbir</p>
     <script src="./index.js"></script>
 </body>
 
